@@ -25,8 +25,14 @@
 
 // arrays - const
 
-let customerList = ["John", "Jane", "Alice"];
+// let customerList = ["John", "Jane", "Alice"];
+// console.log(customerList);
+
+// customerList  = "Bob";
+// console.log(customerList);
+
+const customerList = ["John", "Jane", "Alice"];
 console.log(customerList);
 
-customerList  = "Bob";
+customerList.push("Bob");
 console.log(customerList);
