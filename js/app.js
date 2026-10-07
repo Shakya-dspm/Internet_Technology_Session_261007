@@ -88,15 +88,34 @@
 
 // find - methods
 
-const studentList = [
-    { name: "John", age: 20 },
-    { name: "Jane", age: 22 },
-    { name: "Alice", age: 19 },
-    { name: "Bob", age: 21 }
-];
-console.log(studentList);
+// const studentList = [
+//     { name: "John", age: 20 },
+//     { name: "Jane", age: 22 },
+//     { name: "Alice", age: 19 },
+//     { name: "Bob", age: 21 }
+// ];
+// console.log(studentList);
 
 
-let student = studentList.find(student => student.name === "Alice");
-console.log(student);
+// let student = studentList.find(student => student.name === "Alice");
+// console.log(student);
 
+// JSON - javascript object notation
+
+fetch("https://jsonplaceholder.typicode.com/posts/").then(res => res.json()).then(data => {
+    console.log(data);
+
+   let tblItems = document.getElementById("tblItems");
+
+   let tblBody = "";
+
+   data.forEach(element => {
+    tblBody += `  <tr> 
+        <td>${element.id}</td>
+        <td>${element.title}</td>
+        <td>${element.body}</td>
+        <td>${element.userId}</td>
+        </tr>`;
+   });
+    tblItems.innerHTML = tblBody;
+});
