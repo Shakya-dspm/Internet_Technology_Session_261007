@@ -60,12 +60,8 @@ console.log(productList);
 
 let inStockProducts = productList.filter(
     function(product) {
-        return productFilter(product);
+        return product.inStock === true;
     }
 );
-
-function productFilter(product) {
-    return product.inStock === true;
-}
 
 console.log(inStockProducts);
