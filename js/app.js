@@ -72,9 +72,31 @@
 
 // sorting array of objects
 
-const letterList = [ "D", "A", "C", "B", "E", "F", "G", "H", "I", "J"];
-console.log(letterList);
+// const letterList = [ "D", "A", "C", "B", "E", "F", "G", "H", "I", "J"];
+// console.log(letterList);
 
-let sortedList = letterList.sort();
-console.log(sortedList);
-console.log(letterList);
+// let sortedList = letterList.sort();
+// console.log(sortedList);
+// console.log(letterList);
+
+
+// const salaryList = [ 5000, 3000, 7000, 2000, 6000, 4000 ];
+// console.log(salaryList);  
+
+// let doubleSalaryList = salaryList.map(salary => salary * 2);
+// console.log(doubleSalaryList);
+
+// find - methods
+
+const studentList = [
+    { name: "John", age: 20 },
+    { name: "Jane", age: 22 },
+    { name: "Alice", age: 19 },
+    { name: "Bob", age: 21 }
+];
+console.log(studentList);
+
+
+let student = studentList.find(student => student.name === "Alice");
+console.log(student);
+
