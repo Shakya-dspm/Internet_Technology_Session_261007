@@ -11,14 +11,22 @@
 
 //const
 
-let age = 30;
-console.log(age);
+// let age = 30;
+// console.log(age);
 
-age = 25;
-console.log(age);
+// age = 25;
+// console.log(age);
 
-const number = 10;
-console.log(number);
+// const number = 10;
+// console.log(number);
 
-number = 20; // TypeError: Assignment to constant variable. 
-console.log(number);
+// number = 20; // TypeError: Assignment to constant variable. 
+// console.log(number);
+
+// arrays - const
+
+let customerList = ["John", "Jane", "Alice"];
+console.log(customerList);
+
+customerList  = "Bob";
+console.log(customerList);
