@@ -1,10 +1,24 @@
-{
-    var name = "John Doe";
-    let age = 30;
+// {
+//     var name = "John Doe";
+//     let age = 30;
 
-    console.log("Name: " + name);
-    console.log("Age: " + age);
-}
+//     console.log("Name: " + name);
+//     console.log("Age: " + age);
+// }
 
-console.log("Outside block - Name: " + name); // Accessible
-console.log("Outside block - Age: " + age); // ReferenceError: age is not defined
+// console.log("Outside block - Name: " + name); // Accessible
+// console.log("Outside block - Age: " + age); // ReferenceError: age is not defined
+
+//const
+
+let age = 30;
+console.log(age);
+
+age = 25;
+console.log(age);
+
+const number = 10;
+console.log(number);
+
+number = 20; // TypeError: Assignment to constant variable. 
+console.log(number);
