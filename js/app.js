@@ -49,19 +49,32 @@
 
 // ------ filter method ---------
 
-const productList = [
-    { name: "Laptop", inStock:true, price: 1000 },
-    { name: "Phone", inStock:false, price: 500 },
-    { name: "Tablet", inStock:true, price: 800 },
-    { name: "Monitor", inStock:false, price: 300 }
-];
+// const productList = [
+//     { name: "Laptop", inStock:true, price: 1000 },
+//     { name: "Phone", inStock:false, price: 500 },
+//     { name: "Tablet", inStock:true, price: 800 },
+//     { name: "Monitor", inStock:false, price: 300 }
+// ];
 
-console.log(productList);
+// console.log(productList);
 
-let inStockProducts = productList.filter(
-    function(product) {
-        return product.inStock === true;
-    }
-);
+// let inStockProducts = productList.filter(
+//     function(product) {
+//         return product.inStock === true;
+//     }
+// );
 
-console.log(inStockProducts);
+// console.log(inStockProducts);
+
+
+// let inStockProducts = productList.filter(product => product.inStock == true);
+// console.log(inStockProducts);
+
+// sorting array of objects
+
+const letterList = [ "D", "A", "C", "B", "E", "F", "G", "H", "I", "J"];
+console.log(letterList);
+
+let sortedList = letterList.sort();
+console.log(sortedList);
+console.log(letterList);
