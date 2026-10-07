@@ -31,8 +31,18 @@
 // customerList  = "Bob";
 // console.log(customerList);
 
-const customerList = ["John", "Jane", "Alice"];
-console.log(customerList);
+// const customerList = ["John", "Jane", "Alice"];
+// console.log(customerList);
 
-customerList.push("Bob");
-console.log(customerList);
+// customerList.push("Bob");
+// console.log(customerList);
+
+//------- array methods ---------
+
+const number = [];
+number.push(1,2,3,4,5);
+
+console.log(number);
+
+number.reverse();
+console.log(number);
