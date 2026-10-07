@@ -39,10 +39,33 @@
 
 //------- array methods ---------
 
-const number = [];
-number.push(1,2,3,4,5);
+// const number = [];
+// number.push(1,2,3,4,5);
 
-console.log(number);
+// console.log(number);
 
-number.reverse();
-console.log(number);
+// number.reverse();
+// console.log(number);
+
+// ------ filter method ---------
+
+const productList = [
+    { name: "Laptop", inStock:true, price: 1000 },
+    { name: "Phone", inStock:false, price: 500 },
+    { name: "Tablet", inStock:true, price: 800 },
+    { name: "Monitor", inStock:false, price: 300 }
+];
+
+console.log(productList);
+
+let inStockProducts = productList.filter(
+    function(product) {
+        return productFilter(product);
+    }
+);
+
+function productFilter(product) {
+    return product.inStock === true;
+}
+
+console.log(inStockProducts);
